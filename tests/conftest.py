@@ -16,4 +16,3 @@ def driver(request):
     yield driver
     driver.quit()
 
-
