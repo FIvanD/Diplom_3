@@ -1,5 +1,5 @@
 import allure
-from data import Credentials, UrlPage, ModalWindow
+from data import Credentials, ModalWindow, UrlPage
 from pages.auth_page import AuthPage
 from pages.constructor_page import ConstructorPage
 

@@ -63,7 +63,7 @@ class TestOrder:
 
 
     @allure.title('Проверка счётчика Выполнено за сегодня')
-    def test_counter_order_all_in_all_time(self, driver):
+    def test_counter_order_today(self, driver):
         cp = ConstructorPage(driver)
         ap = AuthPage(driver)
         op = OrderFeedPage(driver)
@@ -85,7 +85,7 @@ class TestOrder:
 
 
     @allure.title('Проверка номера заказа в работе')
-    def test_counter_order_all_in_all_time(self, driver):
+    def test_counter_order_in_work(self, driver):
         cp = ConstructorPage(driver)
         ap = AuthPage(driver)
         op = OrderFeedPage(driver)

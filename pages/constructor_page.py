@@ -87,5 +87,5 @@ class ConstructorPage(BasePage):
     @allure.step('Получение номера только что оформленного заказа')
     def giv_new_order_number(self):
         self.wait_for_page_load()
-        return f'0{self.giv_text_element(ConstructorPageLoc.NEW_NUMBER_ORDER)}'
+        return f'0{self.giv_text_element(ConstructorPageLoc.ORDER_NUMBER_FROM_MODAL)}'
 

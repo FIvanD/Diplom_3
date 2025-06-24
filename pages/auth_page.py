@@ -7,9 +7,10 @@ from locators.auth_page_locators import AuthorizationPageLoc
 class AuthPage(BasePage):
 
     @allure.step('Заполнение полей почты/пароль при авторизации и клик по кнопке войти')
-    def add_auth_field_click(self):
-        self.add_text_to_element(AuthorizationPageLoc.EMAIL_INPUT, Credentials.EMAIL)
-        self.add_text_to_element(AuthorizationPageLoc.PASS_INPUT, Credentials.PASSWORD)
+    def add_auth_field_click(self, email: str = Credentials.EMAIL,
+                             password: str = Credentials.PASSWORD):
+        self.add_text_to_element(AuthorizationPageLoc.EMAIL_INPUT, email)
+        self.add_text_to_element(AuthorizationPageLoc.PASS_INPUT, password)
         self.click_to_element(AuthorizationPageLoc.AUTH_BUTTON)
 
 
