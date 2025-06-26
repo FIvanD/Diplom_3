@@ -1,0 +1,1 @@
+{"name": "Проверка перехода кнопки Конструктор", "status": "skipped", "parameters": [{"name": "driver", "value": "'firefox'"}], "start": 1750447728248, "stop": 1750447728248, "uuid": "e809f98c-890c-4588-a144-65ebad9b8181", "testCaseId": "620719bbfde1b1214d89cccb7c4a3110", "fullName": "tests.test_constructor_page.TestConstructorPage#test_constructor_button"}
