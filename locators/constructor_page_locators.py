@@ -14,4 +14,4 @@ class ConstructorPageLoc:
     COUNT_NUMBER = By.CSS_SELECTOR, "div.counter_counter__ZNLkj > p" # счетчик ингредиентов
     ORDER_MODAL_WINDOW = (By.CSS_SELECTOR, 'button[class*="Modal_modal__close"]') # модальное окно оформленного заказа
     NEW_NUMBER_ORDER = By.XPATH, ".//p[text()='Ваш заказ начали готовить']"  # номер только что оформленного заказа
-    ORDER_NUMBER_FROM_MODAL = By.XPATH, "//div[contains(@class, 'Modal_modal__')]//p[contains(@class, 'digits-large')]"
+    ORDER_NUMBER_FROM_MODAL = By.XPATH, "//h2[contains(@class, 'text_type_digits-large') and starts-with(@class, 'Modal_modal__title')]"
